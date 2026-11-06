@@ -20,6 +20,18 @@ The experiment uses a synthetic table generated with PostgreSQL's `generate_seri
 - Tested lookup: `customer_id = 4242`
 
 The lookup returns 100 rows, representing 0.01% of the table.
+### Data Distribution
+
+The generated dataset contains four order statuses distributed equally:
+
+| Order Status | Percentage|
+|              |           |
+| Pending      | 25%       |
+| Shipped      | 25%       |
+| Delivered    | 25%       |
+| Cancelled    | 25%       |
+
+Each customer has 100 orders, and the order dates are distributed across a 730-day period.
 
 ## Query under test
 
